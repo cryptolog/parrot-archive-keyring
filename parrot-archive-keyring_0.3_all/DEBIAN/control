@@ -1,0 +1,14 @@
+Package: parrot-archive-keyring
+Version: 0.3
+Architecture: all
+Maintainer: Lorenzo "EclipseSpark" Faletra <eclipse@frozenbox.org>
+Installed-Size: 108
+Depends: gpgv
+Recommends: gnupg
+Breaks: apt (<< 0.7.25.1)
+Section: misc
+Priority: important
+Multi-Arch: foreign
+Description: GnuPG archive keys of the Frozenbox archive
+ The Parrot Security project digitally signs its Release files. This package
+ contains the archive keys used for that.
