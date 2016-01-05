@@ -1,9 +1,10 @@
 Package: parrot-archive-keyring
-Version: 0.4
+Version: 0.5
 Architecture: all
 Maintainer: Lorenzo "EclipseSpark" Faletra <eclipse@frozenbox.org>
 Installed-Size: 108
 Depends: gpgv, ca-certificates-frozenbox
+Pre-Depends: apt
 Recommends: gnupg
 Breaks: apt (<< 0.7.25.1)
 Section: misc
