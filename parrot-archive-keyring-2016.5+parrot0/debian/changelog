@@ -1,0 +1,12 @@
+parrot-archive-keyring (2016.5+parrot0) testing; urgency=medium
+
+  * Fix interaction with debian-archive-keyring (i want that fuckin' key here you asshole!)
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Sun, 15 May 2016 01:34:47 +0200
+
+parrot-archive-keyring (2016.4+parrot0) testing; urgency=medium
+
+  * Debianize parrot keyring
+  * Add udeb package for net-retriever
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@frozenbox.org>  Mon, 18 Apr 2016 21:44:54 +0200

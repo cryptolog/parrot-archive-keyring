@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set -e
-
-if ! [ -e "/usr/bin/apt-key" ]
-then
-	cat /usr/share/keyrings/parrot-keyring.gpg | apt-key add -
-fi
-
