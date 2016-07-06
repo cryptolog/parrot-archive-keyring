@@ -4,12 +4,13 @@ Section: misc
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Build-Depends: debhelper (>= 7), jetring, gnupg
-Standards-Version: 3.9.3
+Standards-Version: 3.9.8
 
 Package: parrot-archive-keyring
 Architecture: all
 Depends: gpgv, ${misc:Depends}
 Recommends: gnupg
+Provides: debian-archive-keyring, kali-archive-keyring
 Description: Parrot GPG Archive Keyring
  Public keys for the parrot archives digital signature.
 
@@ -19,7 +20,7 @@ Priority: optional
 Architecture: all
 Section: debian-installer
 Depends: ${misc:Depends}
-Provides: debian-archive-keyring, kali-archive-keyring
+Provides: debian-archive-keyring, kali-archive-keyring, debian-archive-keyring-udeb, kali-archive-keyring-udeb
 Recommends: gpgv-udeb
 Description: Parrot GPG Archive Keyring
  Public keys for the parrot archives digital signature, in a minimal form for use

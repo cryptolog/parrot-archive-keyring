@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 06 Jul 2016 19:01:42 +0200
+Source: parrot-archive-keyring
+Binary: parrot-archive-keyring parrot-archive-keyring-udeb
+Architecture: source all
+Version: 2016.7+parrot1
+Distribution: testing
+Urgency: medium
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Changed-By: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Description:
+ parrot-archive-keyring - Parrot GPG Archive Keyring
+ parrot-archive-keyring-udeb - Parrot GPG Archive Keyring (udeb)
+Changes:
+ parrot-archive-keyring (2016.7+parrot1) testing; urgency=medium
+ .
+   * minor fixes
+Checksums-Sha1:
+ ca3ed60ddd9e1ad781fd65cfe414c1ff6e4b0e66 822 parrot-archive-keyring_2016.7+parrot1.dsc
+ aeda45af9f380266a079ce41dfa18a1e65884042 5600 parrot-archive-keyring_2016.7+parrot1.tar.xz
+ 623677552246da1766df36e3bc8b927865541a25 3324 parrot-archive-keyring-udeb_2016.7+parrot1_all.udeb
+ d2dd7d59b168ed2c9fe6d92b7a5d7d66ce013cf9 4630 parrot-archive-keyring_2016.7+parrot1_all.deb
+Checksums-Sha256:
+ ebcb8c7f067e7f9c4b9288d553d77615167947b986632149d10b369e1816a55a 822 parrot-archive-keyring_2016.7+parrot1.dsc
+ ad61865beec09a14f1d61a85791361666933b4a9563db3dc19735c8036ace579 5600 parrot-archive-keyring_2016.7+parrot1.tar.xz
+ b2569de0121cab705b2fb1ff1783cb8069f135d120ae08b9b78b519fef7917b4 3324 parrot-archive-keyring-udeb_2016.7+parrot1_all.udeb
+ d7771566dcdf17b4ac7b4cb1bed2cac03ce8ba97def5138b48771a431a80a441 4630 parrot-archive-keyring_2016.7+parrot1_all.deb
+Files:
+ 25ab53535d80cc455c0d41126b40a906 822 misc important parrot-archive-keyring_2016.7+parrot1.dsc
+ 2935ec28930a5521a77ad32d6737d89a 5600 misc important parrot-archive-keyring_2016.7+parrot1.tar.xz
+ 910a50f8353341c68d7c8f865441f61f 3324 debian-installer optional parrot-archive-keyring-udeb_2016.7+parrot1_all.udeb
+ 3c9cf5a23bf0d771ff5cfd41f78e63bb 4630 misc important parrot-archive-keyring_2016.7+parrot1_all.deb

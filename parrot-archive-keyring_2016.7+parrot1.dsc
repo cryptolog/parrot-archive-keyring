@@ -2,17 +2,17 @@ Format: 3.0 (native)
 Source: parrot-archive-keyring
 Binary: parrot-archive-keyring, parrot-archive-keyring-udeb
 Architecture: all
-Version: 2016.7+parrot0
+Version: 2016.7+parrot1
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
-Standards-Version: 3.9.3
+Standards-Version: 3.9.8
 Build-Depends: debhelper (>= 7), jetring, gnupg
 Package-List:
  parrot-archive-keyring deb misc important arch=all
  parrot-archive-keyring-udeb udeb debian-installer optional arch=all
 Checksums-Sha1:
- ee6e0c12b1b7a53d27496302e79bb2ffb55a0817 5580 parrot-archive-keyring_2016.7+parrot0.tar.xz
+ aeda45af9f380266a079ce41dfa18a1e65884042 5600 parrot-archive-keyring_2016.7+parrot1.tar.xz
 Checksums-Sha256:
- 1be3f0513ab3cbf112002fa9f8e97259f89cc08ca21cd02f899c4c9700f2d8ef 5580 parrot-archive-keyring_2016.7+parrot0.tar.xz
+ ad61865beec09a14f1d61a85791361666933b4a9563db3dc19735c8036ace579 5600 parrot-archive-keyring_2016.7+parrot1.tar.xz
 Files:
- 35fdbe4f398f0d223c1bd5d6ef1539e5 5580 parrot-archive-keyring_2016.7+parrot0.tar.xz
+ 2935ec28930a5521a77ad32d6737d89a 5600 parrot-archive-keyring_2016.7+parrot1.tar.xz
