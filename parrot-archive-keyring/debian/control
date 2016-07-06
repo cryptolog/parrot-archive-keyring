@@ -19,6 +19,7 @@ Priority: optional
 Architecture: all
 Section: debian-installer
 Depends: ${misc:Depends}
+Provides: debian-archive-keyring, kali-archive-keyring
 Recommends: gpgv-udeb
 Description: Parrot GPG Archive Keyring
  Public keys for the parrot archives digital signature, in a minimal form for use

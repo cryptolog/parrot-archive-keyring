@@ -1,0 +1,80 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: info: source package parrot-archive-keyring
+dpkg-buildpackage: info: source version 2016.7+parrot0
+dpkg-buildpackage: info: source distribution testing
+dpkg-buildpackage: info: source changed by Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+ dpkg-source --before-build parrot-archive-keyring
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+	make -j1 clean
+make[1]: ingresso nella directory "/home/palinuro/Desktop/repo/parrot-archive-keyring/parrot-archive-keyring"
+rm -rf keyrings
+make[1]: uscita dalla directory "/home/palinuro/Desktop/repo/parrot-archive-keyring/parrot-archive-keyring"
+   dh_clean
+ dpkg-source -b parrot-archive-keyring
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building parrot-archive-keyring in parrot-archive-keyring_2016.7+parrot0.tar.xz
+dpkg-source: info: building parrot-archive-keyring in parrot-archive-keyring_2016.7+parrot0.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_auto_configure
+   dh_auto_build
+	make -j1
+make[1]: ingresso nella directory "/home/palinuro/Desktop/repo/parrot-archive-keyring/parrot-archive-keyring"
+mkdir -p keyrings
+jetring-build -I keyrings/parrot-archive-keyring.gpg active-keys
+Applying active-keys/add-parrot-automatic ...
+gpg --import 
+gpg: /tmp/jetring.JZokQk5fOg/trustdb.gpg: creato il trustdb
+gpg: chiave 0F4FC7A6: chiave pubblica "Frozenbox Network (repository signature only) <info@frozenbox.org>" importata
+gpg: Numero totale esaminato: 1
+gpg:               importate: 1  (RSA: 1)
+gpg operation complete
+
+All changesets applied ok.
+make[1]: uscita dalla directory "/home/palinuro/Desktop/repo/parrot-archive-keyring/parrot-archive-keyring"
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	make -j1 install DESTDIR=/home/palinuro/Desktop/repo/parrot-archive-keyring/parrot-archive-keyring/debian/tmp AM_UPDATE_INFO_DIR=no
+make[1]: ingresso nella directory "/home/palinuro/Desktop/repo/parrot-archive-keyring/parrot-archive-keyring"
+install -d /home/palinuro/Desktop/repo/parrot-archive-keyring/parrot-archive-keyring/debian/tmp/usr/share/keyrings/
+cp keyrings/*.gpg /home/palinuro/Desktop/repo/parrot-archive-keyring/parrot-archive-keyring/debian/tmp/usr/share/keyrings/
+make[1]: uscita dalla directory "/home/palinuro/Desktop/repo/parrot-archive-keyring/parrot-archive-keyring"
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_pysupport
+dh_pysupport: This program is deprecated, you should use dh_python2 instead. Migration guide: http://deb.li/dhs2p
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'parrot-archive-keyring' in '../parrot-archive-keyring_2016.7+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-archive-keyring-udeb' in 'debian/.debhelper/scratch-space/build-parrot-archive-keyring-udeb/parrot-archive-keyring-udeb_2016.7+parrot0_all.deb'.
+	Renaming parrot-archive-keyring-udeb_2016.7+parrot0_all.deb to parrot-archive-keyring-udeb_2016.7+parrot0_all.udeb
+ dpkg-genchanges  >../parrot-archive-keyring_2016.7+parrot0_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build parrot-archive-keyring
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+Now running lintian...
+W: parrot-archive-keyring source: maintainer-also-in-uploaders
+W: parrot-archive-keyring source: changelog-should-mention-nmu
+W: parrot-archive-keyring source: source-nmu-has-incorrect-version-number 2016.7+parrot0
+W: parrot-archive-keyring source: ancient-standards-version 3.9.3 (current is 3.9.8)
+W: parrot-archive-keyring: debian-changelog-line-too-long line 3
+W: parrot-archive-keyring-udeb udeb: extended-description-line-too-long
+Finished running lintian.
