@@ -1,3 +1,9 @@
+parrot-archive-keyring (2016.7+parrot2) testing; urgency=medium
+
+  * Fix udeb postinst
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 18 Jul 2016 19:41:52 +0200
+
 parrot-archive-keyring (2016.7+parrot1) testing; urgency=medium
 
   * minor fixes
