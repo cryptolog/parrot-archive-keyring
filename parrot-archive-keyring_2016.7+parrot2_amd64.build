@@ -1,4 +1,0 @@
- dpkg-buildpackage -rfakeroot -D -us -uc maintainerclean
-dpkg-buildpackage: error: unknown option or argument maintainerclean
-
-Use --help for program usage information.
