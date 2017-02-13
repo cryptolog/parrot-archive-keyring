@@ -3,7 +3,7 @@ Priority: important
 Section: misc
 Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
-Build-Depends: debhelper (>= 7), jetring, gnupg
+Build-Depends: debhelper (>= 9), jetring, gnupg
 Standards-Version: 3.9.8
 
 Package: parrot-archive-keyring

@@ -1,3 +1,9 @@
+parrot-archive-keyring (2017.2+parrot0) testing; urgency=medium
+
+  * Add new Parrot Project GPG key
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 14 Feb 2017 00:20:06 +0100
+
 parrot-archive-keyring (2016.7+parrot2) testing; urgency=medium
 
   * Fix udeb postinst
